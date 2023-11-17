@@ -1,3 +1,4 @@
+name: output_demo
 on:
   #Allows you to trigger manually
   workflow_dispatch:
