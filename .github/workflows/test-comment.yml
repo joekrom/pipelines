@@ -1,0 +1,10 @@
+name: test action on issue comment
+on: issue_comment
+
+jobs:
+  test-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo "trigger by a comment body"
+        if: ${{ github.event.comment.body == '!run px-auth-dashboard' }}
